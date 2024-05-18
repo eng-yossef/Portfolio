@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+          // Select the div with the class 'download'
+          const downloadDiv = document.querySelector('.down');
+          const second_downloadDiv = document.querySelector('.downl');
+      
+          // Add a click event listener to the div
+          downloadDiv.addEventListener('click', function() {
+            // Get the file URL from the data attribute
+            const fileUrl = downloadDiv.getAttribute('data-file');
+      
+            // Create a temporary anchor element
+            const tempLink = document.createElement('a');
+            tempLink.href = fileUrl;
+            tempLink.download = ''; // Optionally, you can set the filename here
+      
+            // Append the anchor to the body (required for Firefox)
+            document.body.appendChild(tempLink);
+      
+            // Programmatically click the anchor to trigger the download
+            tempLink.click();
+      
+            // Remove the anchor from the document
+            document.body.removeChild(tempLink);
+          });
+      
+          // Add a click event listener to the div
+          second_downloadDiv.addEventListener('click', function() {
+            // Get the file URL from the data attribute
+            const fileUrl = downloadDiv.getAttribute('data-file');
+      
+            // Create a temporary anchor element
+            const tempLink = document.createElement('a');
+            tempLink.href = fileUrl;
+            tempLink.download = ''; // Optionally, you can set the filename here
+      
+            // Append the anchor to the body (required for Firefox)
+            document.body.appendChild(tempLink);
+      
+            // Programmatically click the anchor to trigger the download
+            tempLink.click();
+      
+            // Remove the anchor from the document
+            document.body.removeChild(tempLink);
+          });
+        });
+      </script>
+      
+</head>
+<body>
+    <a href="#" class="scrollToHome" style="display: inline;">
+        <i class="fa-solid fa-arrow-up"></i>
+        <!-- <i class="fa-solid fa-arrow-up fa-bounce"></i> -->
+    </a>
+    <div class="container">
+        <div id="menuContainer">
+
+            <i class="fa-solid fa-bars"></i>
+        <div id="menu">
+            <ul>
+                <li><a href="#"><p>Home</p></a></li>                
+                <li><a href="#port"><p>portfolio</p></a></li>
+                <li><a href="#about"><p>about</p></a></li>
+                <li><a href="#mySkils"><p>Skills</p></a></li>
+                <li><a href="#Myreputation"><p>reputation</p></a></li>
+                <li><a href="#Myprice"><p>My price</p></a></li>
+                <li><a href="#ContactMe"><p>Contact Me</p></a></li>
+                <li><a href="#sendMessage"><p>Message</p></a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="left">
+            
+            
+        </div>
+        <div class="right">
+            <div class="content">
+                
+                
+        <div class="start-section">
+            <h1>Youssef khaled Abdou</h1>
+            <h3>Java Developer</h3>
+            <div class="download down" data-file="F:\WEB_Course\CSS\Day-ten\task\youssef_Khaled_Resume[1]_(1)[1].pdf">
+                <i class="fa-solid fa-download"></i>  
+                Download Resume
+            </div>
+            
+        </div>
+        <div class="portfolio" id="port">
+            <h2 class="gray-color">My Portfolio</h2>
+           <div class="photos">
+            <img src="img/th (4).jpeg" alt="" id="ngf">
+            <img src="img/th.jpeg" alt="">
+            <img src="img/th (3).jpeg" alt="">
+            <img src="img/tal.jpeg" alt="" id="tall">
+            <img src="img/th (2).jpeg" alt=""id="apple">
+            <img src="img/th (1).jpeg" alt="">
+
+
+
+
+
+            
+
+           </div>
+
+        </div>
+        <div class="about" id="about">
+            <h2 class="gray-color">About</h2>
+            <p  class="gray-color">an ambitious undergraduate Junior Java Developer with two years of hands-on experience in Java 
+                programming. With a strong background in machine learning and deep learning algorithms, including Python 
+                ,CNNs, RNNs, Java  and C++, driven by a passion for innovation and problem-solving. Eager to contribute my 
+                skills and continue learning, I’m committed to making meaningful contributions to software development 
+                projects.</p>
+        </div>
+        <div class="mySkils"id="mySkils">
+            <h2 class="gray-color">MySkills</h2>
+            <p>Photography</p>
+            <div class="out-degree">
+                <div class="in-degree">
+                    80%
+
+                </div>
+            </div>
+            <p>Web Design</p>
+            <div class="out-degree">
+                <div class="in-degree" id="web-degree">
+                    95%
+
+                </div>
+            </div>
+            <p>Photoshop</p>
+            <div class="out-degree">
+                <div class="in-degree" id="photoshop-degree">
+                    50%
+
+                </div>
+            </div>
+            <table id="skills-table" class="out-degree">
+                <tr>
+                    <td>14+</td>
+                    <td>55+</td>
+                    <td>88+</td>
+                    <td>99+</td>
+                </tr>
+                <tr>
+                    <td>partener</td>
+                    <td>project</td>
+                    <td>Happy</td>
+                    <td>Metting</td>
+                </tr>
+            </table>
+            <div class="download downl"  id="second-download" data-file="F:\WEB_Course\CSS\Day-ten\task\youssef_Khaled_Resume[1]_(1)[1].pdf">
+                <i class="fa-solid fa-download"></i>  
+                Download Resume
+            </div>
+            <div class="Myreputation"id="Myreputation">
+                <p class="gray-color">My Reputation</p>
+                <div class="character">
+                    <img src="img/jo.jpg" alt="K3waan">
+                    <div class="describe">
+
+                        <h2>youssef khaled .</h2>
+                        <p class="gray-color">Web Developer</p><br>
+                        <p class="gray-color">programming. With a strong background in machine learning</p>
+                    </div>
+
+                </div>
+                <div class="character">
+                    <img src="img/me.jpg" alt="K3waan">
+                    <div class="describe">
+
+                        <h2>youssef khaled .</h2>
+                        <p class="gray-color">Web Developer</p><br>
+                        <p class="gray-color">programming. With a strong background in machine learning</p>
+                    </div>
+
+                </div>
+                
+                <div class="character">
+                    <img src="img/joo.jpg" alt="K3waan">
+                    <div class="describe">
+
+                        <h2>youssef khaled .</h2>
+                        <p class="gray-color">Web Developer</p><br>
+                        <p class="gray-color">programming. With a strong background in machine learning</p>
+                    </div>
+
+                </div>
+
+                
+                
+
+
+            </div>
+            <div class="Myprice"id="Myprice">
+                <div class="container">
+                    <h1 class="gray-color">My price</h1>
+                <div class="forms">
+
+                        <div class="basic form-shape">
+                            <div class="price-type">
+                                <h2 >Basic</h2>
+                                
+                                
+                            </div>
+                            <p>Web Design</p><hr>
+                            <p>photography</p><hr>
+                            <p>5G Storage</p><hr>
+                            <p>Mail Support</p><hr>
+                            <h4 style="margin-bottom: 0;">10$</h4>
+                            <p style="margin-top: 0;">per month</p>
+                            <div class="sign-up gray-color">
+                                <button>Sign Up</button>
+
+                            </div>
+                            
+                        </div>
+                        <div class="pro form-shape">
+                            <div class="price-type">
+                                <h2 >pro</h2>
+                                
+                                
+                            </div>
+                            <p>Web Design</p><hr>
+                            <p>photography</p><hr>
+                            <p>5G Storage</p><hr>
+                            <p>Mail Support</p><hr>
+                            <h4 style="margin-bottom: 0;">10$</h4>
+                            <p style="margin-top: 0;">per month</p>
+                            <div class="sign-up gray-color">
+                                <button>Sign Up</button>
+
+                            
+                        
+                          </div>
+                </div>
+                    
+                </div>
+            </div>
+            <div class="ContactMe"id="ContactMe">
+                <div class="container">
+                    <h1 class="gray-color">Contact me</h1>
+                    <i class="fa-solid fa-location-dot"></i>  Aswan/Edfo <br>
+                    <i class="fa-solid fa-phone"></i>  01150648044 <br>
+                    <i class="fa-solid fa-envelope"></i>  yossefkhaled551@gmail.com <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d57970.74573058087!2d32.89189270012673!3d24.96956526443089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1715805360863!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="sendMessage"id="sendMessage">
+                <h1 class="gray-color">Message me</h1>
+                <p>Let's get in touch,Send me a message...</p>
+
+                <form action="">
+                    <input type="text" placeholder="Name"><br>
+                    <input type="email" placeholder="Email"><br>
+                    <input type="text" placeholder="Subject"><br>
+                    <input type="text" placeholder="Message"><br>
+                    <div class="sendmessage"><i class="fa-brands fa-telegram"></i>  Send message</div>
+
+
+
+
+                </form>
+            </div>
+            <div class="footer">
+                <div class="container">
+
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <p>copy rights &copy are reserved to Youssef khaled Abdou</p>
+            </div>
+
+            </div>
+
+
+        </div>
+
+        
+    </div>
+</div>
+
+    <div class="clear"></div>
+
+</body>
+</html>

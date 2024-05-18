@@ -1,0 +1,345 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: cursive;
+
+}
+html{
+    scroll-behavior: smooth;
+
+}
+.gray-color{
+    color:#CCCCCC;
+}
+#menu {
+    opacity: .6;
+    width: 7%;
+    height: 117px;
+    position: fixed;
+    top: 14px;
+    right: 38px;
+    transition: 1s ease-in-out;
+    display: none;
+}
+.container{
+    overflow: hidden;
+}
+.clear{
+    clear: both;
+}
+.scrollToHome {
+    bottom: 15px;
+    color: black ;
+    display: none;
+    font-size: 18px;
+    padding: 0 11px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    border-color: blue;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    background: transparent;
+    
+
+}
+.scrollToHome:hover{
+    color: #616161;
+    transform: scale(1.4);
+
+}
+.left{
+    background-image: url('img/photo.jpg');
+    background-size: cover;
+    width: 40%;
+    position: fixed;
+    height: 100%;
+    float: left;
+}
+.right{
+    width: 59%;
+    float: right;
+    margin-top: 80px;   
+     margin-left: 18px;
+
+    
+
+
+}
+i.fa-solid.fa-bars{
+    font-weight: 900;
+    color: #CCCCCC;
+    position: fixed;
+    right: 0;
+    font-size: xx-large;
+    margin-top: 10px;
+    margin-right: 10px;
+    transition: 1s ease-in-out;
+    opacity: .6;
+
+    
+}
+i.fa-solid.fa-bars:hover{
+
+    color: #616161;
+    cursor: pointer;
+    
+}
+#menuContainer:hover #menu {
+    transition: 2s ease-in-out;
+
+    display: block;
+}
+#menu ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    transition: 1s ease-in-out;
+
+}
+#menu ul li {
+    background-color: #CCCCCC;
+    width: 100%;
+    margin-bottom: 1%;
+    text-align: center;
+    transition: 1s ease-in-out;
+
+}
+#menu ul li p{
+    margin: 0;
+}
+#menu ul li :hover{
+    background-color: #616161;
+    transition: 1s ease-in-out;
+    transform: scale(1.1);
+
+}
+#menu ul li a{
+    margin: auto;
+    color: black;
+    
+    text-decoration: none;
+}
+
+
+
+
+
+
+.start-section{
+    text-align: center;
+
+}
+.download{
+    margin: auto;
+    background-color:#CCCCCC;
+    padding: 20px;
+    width: 25%;
+    transition: 1s ease-in-out;
+}
+.download:hover{
+    transform: scale(1.1);
+    background-color: #616161;
+    cursor: pointer;
+
+}
+i.fa-solid.fa-download{
+    font-weight: 900;
+    color: black;
+    font-size: 25px;
+    display: contents;
+}
+table{
+    margin-left: 15px;
+    width: 100%;
+}
+.portfolio table td{
+    padding:3px;
+}
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+}
+.photos img{
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+#ngf{    height: 250px;}
+
+.portfolio{
+    margin-top: 100px;
+}
+.portfolio h2{
+   margin-left: 10px;
+
+}
+.content{
+    padding: 30px;
+}
+.out-degree{
+    text-align: center;
+    color: white;
+    background-color: #F1F1F1;
+}
+.in-degree{
+    background-color: #616161;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+}
+#web-degree{
+    width: 95%;
+    
+}
+#photoshop-degree{
+    width: 50%;
+    
+}
+#skills-table{
+    background-color: #616161;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-top: 50px;
+    
+}
+#second-download{
+    margin: 0;
+    margin-top: 40px;
+}
+.character{
+    margin-top: 20px;
+}
+.character img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: inline;
+        object-fit: cover;
+    transition: 1s ease-in-out;
+
+
+}
+.character img:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.character h2 {
+    display: inline;
+}
+.character p {
+    display: inline;
+}
+.character{
+    display: flex;
+}
+.describe{
+    margin-left: 20px;
+}
+.Myreputation p:first-child{
+    font-size: xx-large;
+}
+.Myprice{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+.form-shape{
+
+    background-color: #F1F1F1;
+    width: 47%;
+    height: 414px;
+    margin: auto;
+    border: 2px solid white;
+    box-shadow: 1px 0px 10px black;
+}
+.Myprice .forms{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    text-align: center;
+
+    
+    
+}
+.price-type{
+    height: 12%;
+    background-color: black;
+    color: white;
+}
+.basic .price-type {
+    background-color: #616161;
+}
+.price-type h2{
+    margin: 0;
+    padding-top: 10px;
+}
+.sign-up{
+    width: 100%;
+    background-color: #616161;
+    height: 15%;
+    background-color: #CCCCCC;
+}
+.sign-up button {
+    margin-top: 14px;
+    padding: 10px;
+    width: 40%;
+    background-color: white;
+    border: none;
+    transition: .8s ease-in-out;
+
+}
+.basic .sign-up button:hover,.sendmessage:hover {
+    background-color: #616161;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.pro .sign-up button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.2);
+
+}
+.ContactMe i{
+    margin-bottom: 10px;
+
+}
+form input {
+    width: 87%;
+    height: 40px;
+    margin-top: 10px;
+}
+.sendmessage{
+    transition: .8s ease-in-out;
+    margin-top: 15px;
+    background-color: #CCCCCC;
+    padding: 15px;
+    width: 20%;
+}
+.footer{
+    margin-top: 30px;
+    background-color: #F1F1F1;
+    height: 100px;
+    text-align: center;
+    padding: 20px;
+    
+}
+.icons i{
+    padding: 13px;
+    color: black;
+    transition: ease-in-out  .7s;
+    font-size: x-large;
+}
+.icons i:hover{
+    transform: scale(1.3);
+
+}
